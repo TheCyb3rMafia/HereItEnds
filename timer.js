@@ -1,14 +1,5 @@
 let releaseDate = new Date("2023-11-12T00:00:00");
 
-let dayH = document.querySelector("#days");
-let dayH_bottom = document.querySelector("#days-bottom");
-let hourH = document.querySelector("#hours");
-let hourH_bottom = document.querySelector("#hours-bottom");
-let minuteH = document.querySelector("#minutes");
-let minuteH_bottom = document.querySelector("#minutes-bottom");
-let secondH = document.querySelector("#seconds");
-let secondH_bottom = document.querySelector("#seconds-bottom");
-
 function updateTimer() {
   let today = new Date();
   let diffDate = releaseDate - today;
@@ -32,17 +23,17 @@ function updateTimer() {
 
   let seconds_left = total_seconds_left;
 
-  dayH.innerHTML = preceedZero(day_left, 2);
-  dayH_bottom.innerHTML = preceedZero(day_left, 2);
+  document.getElementById("days").innerHTML = preceedZero(day_left, 2);
+  document.getElementById("days-bottom").innerHTML = preceedZero(day_left, 2);
 
-  hourH.innerHTML = preceedZero(hours_left, 2);
-  hourH_bottom.innerHTML = preceedZero(hours_left, 2);
+  document.getElementById("hours").innerHTML = preceedZero(hours_left, 2);
+  document.getElementById("hours-bottom").innerHTML = preceedZero(hours_left, 2);
 
-  minuteH.innerHTML = preceedZero(minutes_left, 2);
-  minuteH_bottom.innerHTML = preceedZero(minutes_left, 2);
+  document.getElementById("minutes").innerHTML = preceedZero(minutes_left, 2);
+  document.getElementById("minutes-bottom").innerHTML = preceedZero(minutes_left, 2);
 
-  secondH.innerHTML = preceedZero(seconds_left, 2);
-  secondH_bottom.innerHTML = preceedZero(seconds_left, 2);
+  document.getElementById("seconds").innerHTML = preceedZero(seconds_left, 2);
+  document.getElementById("seconds-bottom").innerHTML = preceedZero(seconds_left, 2);
 
 }
 
