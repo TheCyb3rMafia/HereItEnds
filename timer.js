@@ -1,4 +1,4 @@
-let releaseDate = new Date("2023-11-12T21:00:10");
+let releaseDate = new Date("2023-11-12T00:00:00");
 
 let dayH = document.querySelector("#days");
 let dayH_bottom = document.querySelector("#days-bottom");
